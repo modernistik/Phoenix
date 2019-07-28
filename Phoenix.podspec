@@ -9,34 +9,28 @@
 Pod::Spec.new do |s|
   s.name             = 'Phoenix'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Phoenix.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A flexible job system with persistence for Swift.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The Phoenix is a persistence job queue system for Swift. It allows to build
+idempotent and asynchronous job tasks using Foundation's
+`Operation` (NSOperation), that allows for jobs to be "stored" when the
+application is about to terminate, and be restored (resume) once the app has
+relaunched.
                        DESC
 
-  s.homepage         = 'https://github.com/apersaud/Phoenix'
+  s.homepage         = 'https://github.com/modernistik/Phoenix'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'apersaud' => 'persaud@modernistik.com' }
-  s.source           = { :git => 'https://github.com/apersaud/Phoenix.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Anthony Persaud' => 'persaud@modernistik.com' }
+  s.source           = { :git => 'https://github.com/modernistik/Phoenix.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Phoenix/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Phoenix' => ['Phoenix/Assets/*.png']
-  # }
+  s.source_files = 'Phoenix/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
+# To publish `pod trunk push Phoenix.podspec`
+# https://guides.cocoapods.org/making/getting-setup-with-trunk.html
+# Register a new authentication token: pod trunk register <email> '<name>' --description='Macbook'

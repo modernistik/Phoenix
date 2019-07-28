@@ -1,4 +1,5 @@
 # Phoenix
+The Phoenix is a persistence job queue system for Swift. It enables building idempotent and asynchronous job tasks using `Operation` (NSOperation), that allows for jobs to be stored when the application is about to terminate, and be restored (resumed) once the app has relaunched.
 
 [![CI Status](https://img.shields.io/travis/apersaud/Phoenix.svg?style=flat)](https://travis-ci.org/apersaud/Phoenix)
 [![Version](https://img.shields.io/cocoapods/v/Phoenix.svg?style=flat)](https://cocoapods.org/pods/Phoenix)
@@ -9,10 +10,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
-
 Phoenix is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -22,7 +20,7 @@ pod 'Phoenix'
 
 ## Author
 
-apersaud, persaud@modernistik.com
+Anthony Persaud, persaud@modernistik.com
 
 ## License
 
