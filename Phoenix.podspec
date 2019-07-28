@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Phoenix'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A flexible job system with persistence for Swift.'
 
   s.description      = <<-DESC

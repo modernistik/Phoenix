@@ -4,7 +4,8 @@ use_frameworks!
 
 target 'Phoenix_Example' do
   pod 'Phoenix', :path => '../'
-
+  pod 'Alamofire'
+  
   target 'Phoenix_Tests' do
     inherit! :search_paths
 
